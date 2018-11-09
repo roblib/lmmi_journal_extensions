@@ -1,0 +1,7 @@
+name: 'lmmi'
+type: module
+description: 'Custom extensions for the LMMI Journal site'
+core: 8.x
+package: 'LMMI'
+dependencies:
+  - toc_api

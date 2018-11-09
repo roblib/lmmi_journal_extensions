@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains lmmi.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function lmmi_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the lmmi module.
+    case 'help.page.lmmi':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom extensions for the LMMI Journal site') . '</p>';
+      return $output;
+
+    default:
+  }
+}
